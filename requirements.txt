@@ -1,0 +1,8 @@
+# Preprocessing and analysis/ (Python 3.13). Tier 3 has its own pinned file in
+# tier3_xgboost/requirements.txt; Tier 2 additionally needs PyTorch 2.5.1 with CUDA.
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pyarrow==26.0.1

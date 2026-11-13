@@ -1,0 +1,254 @@
+{
+  "config": {
+    "model": "kNN anomaly detector",
+    "features": 57,
+    "reference_population": "train_benign",
+    "reference_size": 32768,
+    "k": 5,
+    "distance": "Euclidean distance to the kth nearest reference row",
+    "batch_size": 512,
+    "prediction_rule": "score >= threshold",
+    "threshold_selection": "per-seed maximum validation F1",
+    "thresholds": {
+      "20261104": 5.094343185424805,
+      "20261105": 4.486191749572754,
+      "20261106": 4.736002445220947
+    },
+    "split_sha256": "e9b7d6d403d048d5f9357f8281cdd4b1921e705a3e87e8464ca07b47f52a83d1",
+    "test_row_id_sha256": "8c0e5fef35edb97c7ce5c6d5316ddaa99caba8f95ba0b96a5d3c172c9b5237e0",
+    "torch_version": "2.5.1+cu124",
+    "gpu": "NVIDIA GeForce RTX 3080"
+  },
+  "validation_flows": 764639,
+  "validation_attacks": 12525,
+  "test_flows": 703245,
+  "test_attacks": 288923,
+  "max_sampled_host_cpu_percent": 22.09418837675351,
+  "runs": [
+    {
+      "seed": 20261104,
+      "validation": {
+        "threshold": 5.094343185424805,
+        "tp": 6871,
+        "fp": 1540,
+        "fn": 5654,
+        "tn": 750574,
+        "precision": 0.8169064320532636,
+        "recall": 0.5485828343313374,
+        "f1": 0.6563813526939244,
+        "false_positive_rate": 0.0020475619387486472,
+        "ap": 0.43972588952088515,
+        "attack_recall": {
+          "DoS GoldenEye": {
+            "count": 10293,
+            "flagged": 6856
+          },
+          "DoS slowloris": {
+            "count": 5,
+            "flagged": 0
+          },
+          "Heartbleed": {
+            "count": 11,
+            "flagged": 1
+          },
+          "Infiltration": {
+            "count": 36,
+            "flagged": 14
+          },
+          "Web Attack - Brute Force": {
+            "count": 1507,
+            "flagged": 0
+          },
+          "Web Attack - Sql Injection": {
+            "count": 21,
+            "flagged": 0
+          },
+          "Web Attack - XSS": {
+            "count": 652,
+            "flagged": 0
+          }
+        }
+      },
+      "test": {
+        "threshold": 5.094343185424805,
+        "tp": 26585,
+        "fp": 8667,
+        "fn": 262338,
+        "tn": 405655,
+        "precision": 0.7541416089867241,
+        "recall": 0.09201413525402961,
+        "f1": 0.16401634919410812,
+        "false_positive_rate": 0.02091851265440889,
+        "ap": 0.8217767551140901,
+        "roc_auc": 0.9243821430855765,
+        "inference_seconds": 2.3091782238334417,
+        "inference_ms_per_flow": 0.0032836041832269573,
+        "attack_recall": {
+          "Bot": {
+            "count": 1966,
+            "flagged": 0
+          },
+          "PortScan": {
+            "count": 158930,
+            "flagged": 295
+          },
+          "DDoS": {
+            "count": 128027,
+            "flagged": 26290
+          }
+        }
+      },
+      "peak_gpu_reserved_mib": 170
+    },
+    {
+      "seed": 20261105,
+      "validation": {
+        "threshold": 4.486191749572754,
+        "tp": 7154,
+        "fp": 2596,
+        "fn": 5371,
+        "tn": 749518,
+        "precision": 0.7337435897435898,
+        "recall": 0.5711776447105789,
+        "f1": 0.642334455667789,
+        "false_positive_rate": 0.003451604411033434,
+        "ap": 0.41795032859735637,
+        "attack_recall": {
+          "DoS GoldenEye": {
+            "count": 10293,
+            "flagged": 7124
+          },
+          "DoS slowloris": {
+            "count": 5,
+            "flagged": 0
+          },
+          "Heartbleed": {
+            "count": 11,
+            "flagged": 10
+          },
+          "Infiltration": {
+            "count": 36,
+            "flagged": 20
+          },
+          "Web Attack - Brute Force": {
+            "count": 1507,
+            "flagged": 0
+          },
+          "Web Attack - Sql Injection": {
+            "count": 21,
+            "flagged": 0
+          },
+          "Web Attack - XSS": {
+            "count": 652,
+            "flagged": 0
+          }
+        }
+      },
+      "test": {
+        "threshold": 4.486191749572754,
+        "tp": 43077,
+        "fp": 17438,
+        "fn": 245846,
+        "tn": 396884,
+        "precision": 0.7118400396595885,
+        "recall": 0.14909508761850043,
+        "f1": 0.24655017485219125,
+        "false_positive_rate": 0.04208803780634386,
+        "ap": 0.776767760348413,
+        "roc_auc": 0.9186783262516954,
+        "inference_seconds": 2.0069560324773192,
+        "inference_ms_per_flow": 0.0028538504112753296,
+        "attack_recall": {
+          "Bot": {
+            "count": 1966,
+            "flagged": 27
+          },
+          "PortScan": {
+            "count": 158930,
+            "flagged": 355
+          },
+          "DDoS": {
+            "count": 128027,
+            "flagged": 42695
+          }
+        }
+      },
+      "peak_gpu_reserved_mib": 170
+    },
+    {
+      "seed": 20261106,
+      "validation": {
+        "threshold": 4.736002445220947,
+        "tp": 7048,
+        "fp": 1770,
+        "fn": 5477,
+        "tn": 750344,
+        "precision": 0.7992742118394194,
+        "recall": 0.5627145708582835,
+        "f1": 0.6604507332614908,
+        "false_positive_rate": 0.002353366643886432,
+        "ap": 0.4882028325049132,
+        "attack_recall": {
+          "DoS GoldenEye": {
+            "count": 10293,
+            "flagged": 7021
+          },
+          "DoS slowloris": {
+            "count": 5,
+            "flagged": 0
+          },
+          "Heartbleed": {
+            "count": 11,
+            "flagged": 10
+          },
+          "Infiltration": {
+            "count": 36,
+            "flagged": 17
+          },
+          "Web Attack - Brute Force": {
+            "count": 1507,
+            "flagged": 0
+          },
+          "Web Attack - Sql Injection": {
+            "count": 21,
+            "flagged": 0
+          },
+          "Web Attack - XSS": {
+            "count": 652,
+            "flagged": 0
+          }
+        }
+      },
+      "test": {
+        "threshold": 4.736002445220947,
+        "tp": 32075,
+        "fp": 17161,
+        "fn": 256848,
+        "tn": 397161,
+        "precision": 0.6514542204890731,
+        "recall": 0.11101573775711868,
+        "f1": 0.1897036601125506,
+        "false_positive_rate": 0.041419475673509974,
+        "ap": 0.7965886003712428,
+        "roc_auc": 0.9206342533272079,
+        "inference_seconds": 2.0100009813904762,
+        "inference_ms_per_flow": 0.002858180266323225,
+        "attack_recall": {
+          "Bot": {
+            "count": 1966,
+            "flagged": 22
+          },
+          "PortScan": {
+            "count": 158930,
+            "flagged": 354
+          },
+          "DDoS": {
+            "count": 128027,
+            "flagged": 31699
+          }
+        }
+      },
+      "peak_gpu_reserved_mib": 170
+    }
+  ]
+}

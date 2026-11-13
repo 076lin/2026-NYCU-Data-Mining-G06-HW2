@@ -1,0 +1,142 @@
+{
+  "split_sha256": "e9b7d6d403d048d5f9357f8281cdd4b1921e705a3e87e8464ca07b47f52a83d1",
+  "knn_reference_size": 32768,
+  "knn_neighbors": 5,
+  "seeds": [
+    {
+      "seed": 20261104,
+      "knn": {
+        "threshold": 5.094343185424805,
+        "tp": 6871,
+        "fp": 1540,
+        "fn": 5654,
+        "tn": 750574,
+        "precision": 0.8169064320532636,
+        "recall": 0.5485828343313374,
+        "f1": 0.6563813526939244,
+        "false_positive_rate": 0.0020475619387486472,
+        "ap": 0.43972588952088515,
+        "attack_recall": {
+          "DoS GoldenEye": {
+            "count": 10293,
+            "flagged": 6856
+          },
+          "DoS slowloris": {
+            "count": 5,
+            "flagged": 0
+          },
+          "Heartbleed": {
+            "count": 11,
+            "flagged": 1
+          },
+          "Infiltration": {
+            "count": 36,
+            "flagged": 14
+          },
+          "Web Attack - Brute Force": {
+            "count": 1507,
+            "flagged": 0
+          },
+          "Web Attack - Sql Injection": {
+            "count": 21,
+            "flagged": 0
+          },
+          "Web Attack - XSS": {
+            "count": 652,
+            "flagged": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261105,
+      "knn": {
+        "threshold": 4.486191749572754,
+        "tp": 7154,
+        "fp": 2596,
+        "fn": 5371,
+        "tn": 749518,
+        "precision": 0.7337435897435898,
+        "recall": 0.5711776447105789,
+        "f1": 0.642334455667789,
+        "false_positive_rate": 0.003451604411033434,
+        "ap": 0.41795032859735637,
+        "attack_recall": {
+          "DoS GoldenEye": {
+            "count": 10293,
+            "flagged": 7124
+          },
+          "DoS slowloris": {
+            "count": 5,
+            "flagged": 0
+          },
+          "Heartbleed": {
+            "count": 11,
+            "flagged": 10
+          },
+          "Infiltration": {
+            "count": 36,
+            "flagged": 20
+          },
+          "Web Attack - Brute Force": {
+            "count": 1507,
+            "flagged": 0
+          },
+          "Web Attack - Sql Injection": {
+            "count": 21,
+            "flagged": 0
+          },
+          "Web Attack - XSS": {
+            "count": 652,
+            "flagged": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261106,
+      "knn": {
+        "threshold": 4.736002445220947,
+        "tp": 7048,
+        "fp": 1770,
+        "fn": 5477,
+        "tn": 750344,
+        "precision": 0.7992742118394194,
+        "recall": 0.5627145708582835,
+        "f1": 0.6604507332614908,
+        "false_positive_rate": 0.002353366643886432,
+        "ap": 0.4882028325049132,
+        "attack_recall": {
+          "DoS GoldenEye": {
+            "count": 10293,
+            "flagged": 7021
+          },
+          "DoS slowloris": {
+            "count": 5,
+            "flagged": 0
+          },
+          "Heartbleed": {
+            "count": 11,
+            "flagged": 10
+          },
+          "Infiltration": {
+            "count": 36,
+            "flagged": 17
+          },
+          "Web Attack - Brute Force": {
+            "count": 1507,
+            "flagged": 0
+          },
+          "Web Attack - Sql Injection": {
+            "count": 21,
+            "flagged": 0
+          },
+          "Web Attack - XSS": {
+            "count": 652,
+            "flagged": 0
+          }
+        }
+      }
+    }
+  ]
+}

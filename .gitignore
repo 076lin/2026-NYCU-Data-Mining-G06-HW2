@@ -1,0 +1,22 @@
+# data and generated matrices (large)
+TrafficLabelling/
+artifacts/
+tier2_knn/artifacts
+tier2_knn/runs/
+tier3_xgboost/TrafficLabelling
+tier3_xgboost/artifacts/
+tier3_xgboost/results/
+tier1_baselines/
+*.npy
+*.npz
+*.parquet
+*.pt
+*.joblib
+# python / latex
+__pycache__/
+.venv/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg

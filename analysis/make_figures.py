@@ -88,7 +88,7 @@ GROUPS = {
     "DoS slowloris": "Slow DoS", "DoS Slowhttptest": "Slow DoS",
 }
 PANELS = [
-    ("train", "(a) Training (Mon to Wed 11:08)", ["DoS Hulk", "Slow DoS", "Brute force (FTP/SSH)"]),
+    ("train", "(a) Training (Mon to Wed 11:07)", ["DoS Hulk", "Slow DoS", "Brute force (FTP/SSH)"]),
     ("val",   "(b) Validation (Wed 11:08 to Thu)", ["DoS GoldenEye", "Web attacks"]),
     ("test",  "(c) Friday test", ["DDoS", "PortScan", "Bot"]),
 ]
